@@ -3,10 +3,10 @@ var when = require('when');
 function CommentsService() {
 	var self = this;
 
-	self.get = function(){
+	self.get = function(key){
 		var deferred = when.defer();
 
-		Comments.find({})
+		Comments.find({"key":key})
 		.sort({date: 'descending'})
 		.exec(function(err, comments) {
 			deferred.resolve(comments);

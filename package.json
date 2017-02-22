@@ -1,7 +1,7 @@
 {
-  "name": "user",
+  "name": "comment",
   "version": "1.0.0",
-  "description": "user service",
+  "description": "comment service",
   "main": "app.js",
   "dependencies": {
     "mongoose": "^4.5.10",

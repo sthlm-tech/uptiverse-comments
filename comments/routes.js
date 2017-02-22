@@ -4,8 +4,8 @@ var comment = require("./comments-service");
 var baseUrl = "/comments"
 module.exports = function() {
 
-	App.Express.get( baseUrl, function (req, res) {
-			comment.get()
+	App.Express.get( baseUrl +"/:key", function (req, res) {
+			comment.get(req.params.key)
 			.then(function(response) {
 				res.send(response);
 			});

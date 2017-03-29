@@ -15,9 +15,11 @@ function CommentsService() {
 		return deferred.promise;
 	};
 
-	self.create = function(in_data){
+	self.create = function(key, in_data){
 		var deferred = when.defer();
 		var comment = new Comments();
+		comment.key = key;
+		comment.date = new Date();
 
 		for (var property in in_data) {
 			if (in_data.hasOwnProperty(property)) {

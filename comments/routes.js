@@ -11,8 +11,8 @@ module.exports = function() {
 			});
 	});
 
-	App.Express.post( baseUrl + "/create", function (req, res) {
-			comment.create(req.body.comment)
+	App.Express.post( baseUrl + "/:key", function (req, res) {
+			comment.create(req.params.key, req.body.comment)
 			.then(function(response) {
 				res.send(response);
 			});

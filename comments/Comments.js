@@ -2,8 +2,8 @@ var mongoose = require('mongoose');
 
 var commentsSchema = mongoose.Schema({
     key: String,
-    date: String,
-    user: String,
+    date: Date,
+    user: Object,
     text: String
 });
 

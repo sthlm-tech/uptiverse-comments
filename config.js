@@ -8,8 +8,7 @@ module.exports = {
 		authServiceUrl: process.env.AUTH_SERVICE_URL || ""
 	},
 	communicator:{
-		path: process.env.COMMUNICATOR_PATH || "",
-		token: process.env.COMMUNICATOR_TOKEN || ""
+		path: process.env.COMMUNICATOR_PATH || ""
 	},
 	service: {
 		name: "uptiverse-comments",

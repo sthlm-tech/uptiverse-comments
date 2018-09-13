@@ -4,7 +4,8 @@ var commentsSchema = mongoose.Schema({
     key: String,
     date: Date,
     user: Object,
-    text: String
+    text: String,
+    tags: [String]
 });
 
 var Comments = mongoose.model('Comments', commentsSchema);

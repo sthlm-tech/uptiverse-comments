@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "comment service",
   "main": "app.js",
-  "engines": {
-    "node": "9.3.0"
-  },
   "dependencies": {
     "mongoose": "^4.5.10",
     "ms-core": "^0.0.25",
